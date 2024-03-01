@@ -38,5 +38,7 @@ rag_chain = (
     | StrOutputParser()
 )
 
-print(rag_chain.invoke("What is the meaning of life?"))
+print(rag_chain.invoke("Summarize what Demis Hassabis had to say about the future of AI on the Dwarkesh Podcast."))
 
+# cleanup
+vectorstore.delete_collection()
